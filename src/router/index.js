@@ -4,7 +4,7 @@ Vue.use(Router)
 
 import Layout from '@/views/layout'
 import Login from '@/views/login'
-import Dashboard from '@/views/Dashboard'
+import Dashboard from '@/views/dashboard'
 import Topic from '@/views/vocaGames/topic'
 import Question from '@/views/vocaGames/question'
 import QuestionDetail from '@/views/vocaGames/question-detail'
