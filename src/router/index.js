@@ -50,7 +50,7 @@ export default new Router({
               component: Question
             },
             {
-              path: 'questions/:question_id',
+              path: 'questions/{:question_id}',
               name: 'Register Answers',
               component: QuestionDetail
             },
