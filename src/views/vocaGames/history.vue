@@ -12,7 +12,7 @@
                 {{data.item.user.firstName}} {{data.item.user.lastName}}
               </span>
             </template>
-            <template slot="type" slot-scope="data">
+            <template slot="gameType" slot-scope="data">
               {{types[data.item.gameType]}}
             </template>
             <template slot="date" slot-scope="data">
