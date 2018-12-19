@@ -2,7 +2,7 @@
   <AppHeaderDropdown right no-caret>
     <template slot="header">
       <img
-        :src="adminUser.avatar"
+        src="@/assets/images/avatars/2.jpg"
         class="img-avatar"
         :alt="adminUser.lastName" />
     </template>\

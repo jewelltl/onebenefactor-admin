@@ -2,7 +2,7 @@ import request from '../utils/request'
 
 export function addTopic (topic) {
   return request({
-    url: '/api/v1/topics',
+    url: '/topics',
     method: 'post',
     data: topic
   })
@@ -10,7 +10,7 @@ export function addTopic (topic) {
 
 export function removeTopic (topic) {
   return request({
-    url: '/api/v1/topics',
+    url: '/topics',
     method: 'delete',
     params: {
       id: topic
@@ -20,21 +20,21 @@ export function removeTopic (topic) {
 
 export function getTopics () {
   return request({
-    url: '/api/v1/topics',
+    url: '/topics',
     method: 'get'
   })
 }
 
 export function getTopic (id) {
   return request({
-    url: `/api/v1/topics/${id}`,
+    url: `/topics/${id}`,
     method: 'get'
   })
 }
 
 export function addQuestion (question) {
   return request({
-    url: '/api/v1/questions',
+    url: '/questions',
     method: 'post',
     data: question
   })
@@ -42,28 +42,28 @@ export function addQuestion (question) {
 
 export function getQuestions () {
   return request({
-    url: '/api/v1/questions',
+    url: '/questions',
     method: 'get'
   })
 }
 
 export function getQuestion (id) {
   return request({
-    url: `/api/v1/questions/${id}`,
+    url: `/questions/${id}`,
     method: 'get'
   })
 }
 
 export function removeQuestion (id) {
   return request({
-    url: `/api/v1/questions/${id}`,
+    url: `/questions/${id}`,
     method: 'delete'
   })
 }
 
 export function addAnswer (question, answer) {
   return request({
-    url: '/api/v1/answers',
+    url: '/answers',
     method: 'post',
     data: {
       question: question,
@@ -74,7 +74,7 @@ export function addAnswer (question, answer) {
 
 export function updateAnswer (answer) {
   return request({
-    url: `/api/v1/answers/${answer._id}`,
+    url: `/answers/${answer._id}`,
     method: 'patch',
     data: answer
   })
@@ -82,14 +82,14 @@ export function updateAnswer (answer) {
 
 export function removeAnswer (id) {
   return request({
-    url: `/api/v1/answers/${id}`,
+    url: `/answers/${id}`,
     method: 'delete'
   })
 }
 
 export function getHistory () {
   return request({
-    url: `/api/v1/game/history`,
+    url: `/game/history`,
     method: 'get'
   })
 }

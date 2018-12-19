@@ -2,7 +2,7 @@ import request from '../utils/request'
 
 export function login (userInfo) {
   return request({
-    url: '/api/v1/token',
+    url: '/token',
     method: 'post',
     data: {
       email: userInfo.email.trim(),
@@ -13,14 +13,14 @@ export function login (userInfo) {
 
 export function logout (token) {
   return request({
-    url: '/api/v1/token',
+    url: '/token',
     method: 'delete'
   })
 }
 
 export function getInfo (token) {
   return request({
-    url: '/api/v1/user/me',
+    url: '/user/me',
     method: 'post'
   })
 }

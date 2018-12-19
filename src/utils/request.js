@@ -4,7 +4,7 @@ import { getToken } from './auth'
 
 // create an axios instance
 const service = axios.create({
-  baseURL: process.env.API_HOST, // api 的 base_url
+  baseURL: `${[process.env.API_HOST, process.env.API_NAMESPACE].join('/')}`, // api 的 base_url
   timeout: 5000, // request timeout,
   headers: {
     'Accept': 'application/json',

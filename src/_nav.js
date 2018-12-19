@@ -1,6 +1,11 @@
 export default {
   items: [
     {
+      name: 'Dashboard',
+      url: '/dashboard',
+      icon: 'icon-speedometer'
+    },
+    {
       name: 'Vocabulary Game',
       url: '/voca-game',
       icon: 'icon-star',
