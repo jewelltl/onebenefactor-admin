@@ -148,7 +148,7 @@ export default {
         })
     },
     toQuestion (questionId) {
-      this.$router.push({name: 'Question Detail', params: {question_id: questionId}})
+      this.$router.push({name: 'Register Answers', params: {question_id: questionId}})
     }
   }
 }
